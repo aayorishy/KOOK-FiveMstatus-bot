@@ -1,4 +1,2 @@
-asyncio==3.4.3
+khl.py==0.3.17
 aiohttp==3.8.5
-khl.py==0.3.7
-aiofiles==24.1.0
