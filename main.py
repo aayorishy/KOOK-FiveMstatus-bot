@@ -1,12 +1,12 @@
 from khl import Bot, Message
 import aiohttp
 
-bot = Bot(token='1/MzI0NjM=/2Ifzdd4kBC/+s5Ax6KhLfA==') # 请替换为你的Token
+bot = Bot(token='token') # 请替换为你的Token
 
 @bot.command(name="fivemol", case_sensitive=False)
 async def fivemol(msg: Message):
-    fivem_ip = "r8rrpg"  # 请替换为实际的服务器IP
-    fivem_name = "test"  # 请替换为实际的服务器名称
+    fivem_ip = ""  # 请替换为实际的服务器IP
+    fivem_name = ""  # 请替换为实际的服务器名称
 
     async with aiohttp.ClientSession() as session:
         async with session.get(f'https://servers-frontend.fivem.net/api/servers/single/{fivem_ip}') as resp:
